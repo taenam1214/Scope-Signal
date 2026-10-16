@@ -40,7 +40,7 @@ export default function ContactPage() {
             <div>
               <span className="eyebrow mb-4">
                 <span className="h-1.5 w-1.5 rounded-full bg-amber" aria-hidden />
-                Talk to the founder
+                Contact us
               </span>
               <h1 className="text-balance font-display text-4xl font-semibold text-navy sm:text-5xl">
                 Let&apos;s talk about missed scope changes.

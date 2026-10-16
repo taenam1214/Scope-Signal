@@ -195,7 +195,7 @@ export default function AboutPage() {
             </p>
             <div className="mt-8 flex justify-center">
               <Button href="/contact" size="lg">
-                Talk to the Founder <ArrowRight className="h-4 w-4" />
+                Contact us <ArrowRight className="h-4 w-4" />
               </Button>
             </div>
           </Reveal>

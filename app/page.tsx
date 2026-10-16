@@ -80,7 +80,7 @@ export default function HomePage() {
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Button href="/contact" size="lg">
-                Talk to the Founder
+                Contact us
                 <ArrowRight className="h-4 w-4" />
               </Button>
               <Button href="/#how-it-works" variant="secondary" size="lg">
@@ -458,7 +458,7 @@ export default function HomePage() {
             </p>
             <div className="mt-8 flex justify-center">
               <Button href="/contact" size="lg">
-                Talk to the Founder
+                Contact us
                 <ArrowRight className="h-4 w-4" />
               </Button>
             </div>

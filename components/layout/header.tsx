@@ -67,7 +67,7 @@ export function Header() {
 
         <div className="hidden lg:block">
           <Button href="/contact" size="sm">
-            Talk to the Founder
+            Contact us
           </Button>
         </div>
 
@@ -100,7 +100,7 @@ export function Header() {
             </Link>
           ))}
           <Button href="/contact" className="mt-3 w-full">
-            Talk to the Founder
+            Contact us
           </Button>
         </nav>
       </div>
