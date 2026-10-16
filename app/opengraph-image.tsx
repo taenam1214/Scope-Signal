@@ -1,12 +1,17 @@
 import { ImageResponse } from "next/og";
+import { readFile } from "fs/promises";
+import { join } from "path";
 
-export const runtime = "edge";
-export const alt =
-  "ScopeSignal — Construction Change-Order Intelligence";
+export const alt = "ScopeSignal — Construction Change-Order Intelligence";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-export default function OpengraphImage() {
+export default async function OpengraphImage() {
+  const iconData = await readFile(
+    join(process.cwd(), "public/brand/logo_icon2.png")
+  );
+  const iconSrc = `data:image/png;base64,${iconData.toString("base64")}`;
+
   return new ImageResponse(
     (
       <div
@@ -22,30 +27,12 @@ export default function OpengraphImage() {
         }}
       >
         {/* Logo row */}
-        <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
-          <div
-            style={{
-              width: 56,
-              height: 56,
-              borderRadius: 16,
-              background: "#111827",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              border: "1px solid rgba(255,255,255,0.08)",
-            }}
-          >
-            <div
-              style={{
-                width: 16,
-                height: 16,
-                borderRadius: 999,
-                background: "#F59E0B",
-              }}
-            />
-          </div>
-          <div style={{ color: "white", fontSize: 32, fontWeight: 700 }}>
-            Scope<span style={{ color: "#3B82F6" }}>Signal</span>
+        <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={iconSrc} width={64} height={64} alt="" />
+          <div style={{ display: "flex", fontSize: 34, fontWeight: 700 }}>
+            <span style={{ color: "white" }}>Scope</span>
+            <span style={{ color: "#3B82F6" }}>Signal</span>
           </div>
         </div>
 
