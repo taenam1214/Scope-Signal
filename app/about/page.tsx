@@ -140,21 +140,22 @@ export default function AboutPage() {
             />
 
             <div className="mt-8 flex flex-col gap-4 rounded-2xl border border-line bg-white p-6 shadow-card sm:flex-row sm:items-center">
-              <div className="flex h-20 w-20 shrink-0 items-center justify-center overflow-hidden rounded-full bg-surface text-muted ring-1 ring-line">
-                {/* [PLACEHOLDER] Replace with founder photograph */}
-                <span className="text-xs">Photo</span>
+              <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-full ring-1 ring-line">
+                <Image
+                  src="/images/founder-taenam-kim.jpeg"
+                  alt="Taenam Kim, Founder & CEO of ScopeSignal"
+                  fill
+                  sizes="80px"
+                  className="object-cover"
+                />
               </div>
               <div>
-                <p className="text-lg font-semibold text-navy">[Founder Name]</p>
-                <p className="text-sm text-muted">
-                  [Founder Title] &amp; Founder, ScopeSignal
-                </p>
-                <p className="mt-2 text-sm leading-relaxed text-muted">
-                  [Short founder bio placeholder — replace before launch. Keep to
-                  verifiable background only.]
-                </p>
+                <p className="text-lg font-semibold text-navy">Taenam Kim</p>
+                <p className="text-sm text-muted">Founder &amp; CEO, ScopeSignal</p>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/taenamkim/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="mt-2 inline-flex items-center gap-1.5 text-sm font-medium text-signal hover:underline"
                 >
                   <Linkedin className="h-4 w-4" /> LinkedIn profile

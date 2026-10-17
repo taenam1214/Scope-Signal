@@ -357,17 +357,22 @@ export default function HomePage() {
 
               {/* Founder placeholder */}
               <div className="mt-8 flex items-center gap-4 rounded-2xl border border-line bg-white p-5 shadow-card">
-                <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-surface text-muted ring-1 ring-line">
-                  {/* [PLACEHOLDER] Founder photograph */}
-                  <HardHat className="h-7 w-7" />
+                <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-full ring-1 ring-line">
+                  <Image
+                    src="/images/founder-taenam-kim.jpeg"
+                    alt="Taenam Kim, Founder & CEO of ScopeSignal"
+                    fill
+                    sizes="64px"
+                    className="object-cover"
+                  />
                 </div>
                 <div className="min-w-0">
-                  <p className="text-sm font-semibold text-navy">
-                    [Founder Name]
-                  </p>
-                  <p className="text-sm text-muted">[Founder Title], ScopeSignal</p>
+                  <p className="text-sm font-semibold text-navy">Taenam Kim</p>
+                  <p className="text-sm text-muted">Founder &amp; CEO, ScopeSignal</p>
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/in/taenamkim/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="mt-1 inline-flex items-center gap-1.5 text-sm font-medium text-signal hover:underline"
                   >
                     <Linkedin className="h-4 w-4" /> LinkedIn
